@@ -1,0 +1,37 @@
+@@startuml
+
+Class Persona {
+Codigo : 
+Nombres
+}
+
+Class Empleado {
+Fecha Ingreso : Date
+Sueldo : Float
+}
+
+
+Class RepositorioEmpleado {
+    empleado :  List
+    + buscar(codigo) : empleado
+    + agregar(empleado)  :  boolean
+    + editar(empleado)  :  boolean
+    + eliminar(empleado)  :  boolean
+}
+
+Class CasoUsoEmpleado{
+    empleado : object
+    repositorioEmpleado : object
+
+    void constructor()
+    + buscar(codigo) : empleado
+    + agregar(empleado)  :  boolean
+    + editar(empleado)  :  boolean
+    + eliminar(empleado)  :  boolean
+
+}
+
+Persona <|-- Empleado
+RepositorioEmpleado *-- CasoUsoEmpleado
+
+@@enduml
