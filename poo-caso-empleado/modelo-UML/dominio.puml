@@ -31,8 +31,11 @@ Class CasoUsoEmpleado{
 
 }
 
+
+
 Persona <|-- Empleado
 RepositorioEmpleado *-- CasoUsoEmpleado
+
 
 @@enduml
 
