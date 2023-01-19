@@ -1,0 +1,16 @@
+.image{
+width: 200px;
+height: 200px ;
+}
+
+.container{
+
+    text-align: left;
+}
+
+body {
+    font: 1rem/1.5 var(--bs-font-sans-serif);
+  }
+  a {
+    color: var(--bs-blue);
+  }

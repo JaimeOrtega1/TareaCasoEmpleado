@@ -35,3 +35,4 @@ Persona <|-- Empleado
 RepositorioEmpleado *-- CasoUsoEmpleado
 
 @@enduml
+
